@@ -1,0 +1,24 @@
+* {
+    font-family: 'Quicksand';
+}
+
+li {
+    list-style-type: none;
+    }
+
+body {
+    background: url('https://www.pngkey.com/png/full/277-2776539_14-amoeba-boys-powerpuff-girls-amoeba-boys.png') no-repeat center;
+    background-size: cover;
+    background-color:purple
+}
+
+.jumbo-bg {
+    background: url('https://ak.picdn.net/shutterstock/videos/753514/thumb/1.jpg') no-repeat center;
+    background-size: cover;
+    /* background: none; */
+    color: purple;
+}
+
+#selDataset {
+    font-size: 14px;
+}
