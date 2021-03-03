@@ -120,15 +120,23 @@ function plotCharts(id) {
             } // close switch statement
 
         }); // close forEach
-
+        console.log(otuIds);
+        console.log(sampleValues);
+        console.log(otuLabels);
         // slice and reverse the arrays to get the top 10 values, labels and IDs
         var topOtuIds = otuIds[0].slice(0, 10).reverse();
+        // var topOtuIds = otuIds[0].sort((firstNum, secondNum) => secondNum- firstNum).slice(0, 10).reverse();
         var topOtuLabels = otuLabels[0].slice(0, 10).reverse();
+        // var topOtuLabels = otuLabels[0].sort((firstNum, secondNum) => secondNum- firstNum).slice(0, 10).reverse();
         var topSampleValues = sampleValues[0].slice(0, 10).reverse();
-
+        // var topSampleValues = sampleValues[0].sort((firstNum, secondNum) => secondNum- firstNum).slice(0, 10).reverse();
+        console.log(topOtuIds);
+        console.log(topSampleValues);
+        console.log(topOtuLabels);
+        
         // use the map function to store the IDs with "OTU" for labelling y-axis
         var topOtuIdsFormatted = topOtuIds.map(otuID => "OTU " + otuID);
-
+        console.log(topOtuIdsFormatted);
         // ----------------------------------
         // PLOT BAR CHART
         // ----------------------------------
